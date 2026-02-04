@@ -6,7 +6,7 @@ export type CostTier = 'low' | 'medium' | 'high' | 'very-high';
 export type SafetyTier = 'very-safe' | 'safe' | 'moderate' | 'developing';
 export type TimezoneBand = 'americas' | 'europe-africa' | 'asia-pacific' | 'middle-east';
 export type VisaRoute = 'investment' | 'entrepreneur' | 'golden-visa' | 'digital-nomad' | 'employment' | 'citizenship-by-investment' | 'territory-resident';
-export type Continent = 'north-america' | 'central-america' | 'caribbean' | 'europe' | 'middle-east' | 'asia' | 'oceania';
+export type Continent = 'north-america' | 'central-america' | 'south-america' | 'caribbean' | 'europe' | 'middle-east' | 'asia' | 'oceania';
 
 export interface JurisdictionScores {
   taxHodl: number;        // 0-10: Tax friendliness for long-term holders

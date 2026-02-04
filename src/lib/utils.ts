@@ -41,6 +41,7 @@ export function getContinentLabel(continent: string): string {
   const labels: Record<string, string> = {
     'north-america': 'North America',
     'central-america': 'Central America',
+    'south-america': 'South America',
     'caribbean': 'Caribbean',
     'europe': 'Europe',
     'middle-east': 'Middle East',

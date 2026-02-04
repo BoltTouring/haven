@@ -52,7 +52,7 @@ Drawbacks: The cost of living is high – housing in upscale areas, internationa
       safety: 'Consistently ranks among the world\'s safest nations with very low crime rates and strict law enforcement.',
       education: 'Excellent international schools available, though fees are expensive. Good options for K-12 and higher education.',
       cost: 'High cost of living – housing in upscale areas, international school fees, and luxury lifestyle come at a premium.',
-      cryptoCommunity: 'Thriving Bitcoin scene with major exchanges, conferences, and a large community of Bitcoin entrepreneurs and influencers.',
+      cryptoCommunity: 'Thriving Bitcoin scene with over 1,000 Bitcoin companies operating in Dubai\'s crypto-friendly free zones. Major conferences and large expat community.',
       infra: 'World-class infrastructure: ultra-modern cities, excellent internet, reliable power, and top-tier banking services.',
       lifestyle: 'Luxury amenities, vibrant expat community, excellent dining and entertainment. Summers are extremely hot but AC is ubiquitous.',
     },
@@ -83,13 +83,13 @@ Drawbacks: The cost of living is high – housing in upscale areas, internationa
     rank: 2,
     isHonorableMention: false,
     shortBlurb: 'Alpine quality of life meets Bitcoin innovation in the famous "Crypto Valley" with tax-free capital gains.',
-    longDescription: `Long known for banking and neutrality, Switzerland has embraced Bitcoin with equal zeal. The canton of Zug is nicknamed "Crypto Valley" for its dense cluster of blockchain companies and even Bitcoin-friendly government services.
+    longDescription: `Switzerland is often seen as the gold standard for Bitcoin-friendly living. The canton of Zug, nicknamed "Crypto Valley," hosts over 1,100 blockchain companies and even accepts Bitcoin for some government services. In 2023, CoinDesk ranked Zug the #1 global crypto hub, citing its "regulatory clarity, crypto-friendly banks and a lively crypto job market."
 
 For individuals, Swiss tax policy is very favorable: personal capital gains are tax-free in most cases (as long as you're not classified as a professional trader) and Bitcoin is treated as an asset for wealth tax. This means a long-term Bitcoin HODLer in Switzerland might pay no tax on their Bitcoin gains.
 
-The regulatory environment is clear and supportive – FINMA (the Swiss regulator) provides guidelines for ICOs, exchanges, etc., and some towns accept Bitcoin for tax payments. Quality of life is extraordinary: Switzerland is extremely safe, politically stable, and boasts clean cities, efficient public transport, and stunning nature.
+The regulatory environment is clear and supportive – FINMA (the Swiss regulator) provides consistent rules with no sudden shocks, guidelines for ICOs, exchanges, etc., and some towns accept Bitcoin for tax payments. Quality of life is extraordinary: Switzerland is extremely safe, politically stable, and boasts clean cities, efficient public transport, and stunning nature.
 
-Drawbacks: The cost of living is extremely high. Zurich, Geneva, Zug – all are among the priciest cities globally. Obtaining residency can be tricky for non-EU citizens unless you have a job or significant assets.`,
+Drawbacks: The cost of living is extremely high. Zurich, Geneva, Zug – all are among the priciest cities globally. Obtaining residency can be tricky for non-EU citizens unless you have a job or significant assets. Wealthy individuals sometimes use lump-sum taxation schemes to become Swiss residents.`,
     tags: {
       climate: 'alpine',
       urbanity: 'city',
@@ -123,7 +123,7 @@ Drawbacks: The cost of living is extremely high. Zurich, Geneva, Zug – all are
       safety: 'Extremely safe – one of the world\'s most peaceful countries with very low crime and excellent rule of law.',
       education: 'World-class education system. Top-ranked universities and excellent international schools. Among the highest education indices globally.',
       cost: 'Extremely high cost of living. Zurich and Zug are among the world\'s most expensive cities. Premium prices for everything.',
-      cryptoCommunity: 'The epicenter of Bitcoin in Europe. Dense cluster of blockchain companies, startups, and the famous "Crypto Valley" ecosystem.',
+      cryptoCommunity: 'The epicenter of Bitcoin in Europe. Over 1,100 blockchain companies in Zug alone. Ranked #1 global crypto hub by CoinDesk in 2023.',
       infra: 'World-class infrastructure: clean cities, efficient public transport, excellent internet, and the famous Swiss precision.',
       lifestyle: 'Stunning Alpine scenery, outdoor activities, high quality of life. Clean air, beautiful lakes, and excellent work-life balance.',
     },
@@ -194,7 +194,7 @@ Drawbacks: Cost of living is very high – Singapore often ties with Hong Kong, 
       safety: 'Among the safest cities in the world with extremely low crime rates. Strict law enforcement ensures security.',
       education: 'Top-tier education system – Singapore leads global student rankings. Excellent international schools and universities.',
       cost: 'Very high cost of living – often ranked with Hong Kong and Zurich as the world\'s most expensive. Housing, cars, and most goods come at a premium.',
-      cryptoCommunity: 'Leading Bitcoin hub in Asia. Major exchanges, fintech startups, and a vibrant blockchain community. MAS provides clear licensing framework.',
+      cryptoCommunity: 'Leading Bitcoin hub in Asia. Major exchanges, fintech startups, and vibrant community. An estimated 43% of young adults in Singapore own crypto.',
       infra: 'Ultra-modern infrastructure: world-class internet, efficient public transport, reliable utilities, and excellent banking services.',
       lifestyle: 'Clean, efficient city with excellent dining, shopping, and cultural options. Gateway to Asia. Tropical climate year-round.',
     },
@@ -269,7 +269,7 @@ Drawbacks: The country historically had high crime, though there have been major
       lifestyle: 'Tropical Pacific beaches, surfer\'s paradise, warm climate year-round. El Zonte is a famous Bitcoin destination. Spanish is the main language.',
     },
     specialRules: {
-      legalTender: 'Bitcoin is legal tender alongside USD since 2021. Businesses are required to accept Bitcoin via the Chivo wallet.',
+      legalTender: 'Bitcoin is legal tender alongside USD since 2021. A 2025 update relaxed requirements – Bitcoin is no longer mandatory for merchants but remains widely accepted.',
       other: 'Government is actively building "Bitcoin City" near a volcano. Volcano Bonds offer unique investment opportunity.',
     },
     images: [
@@ -765,6 +765,213 @@ Drawbacks: Bitcoin regulations remain somewhat unclear after the partial veto. N
       { url: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200', alt: 'Caribbean beaches', creditName: 'Sean O.', creditUrl: 'https://unsplash.com/@seano', sourceName: 'Unsplash' },
       { url: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200', alt: 'Modern cityscape night', creditName: 'Pedro Lastra', creditUrl: 'https://unsplash.com/@peterlaster', sourceName: 'Unsplash' },
       { url: 'https://images.unsplash.com/photo-1559128010-7c1ad6c27e1e?w=1200', alt: 'Tropical islands', creditName: 'Shifaaz Shamoon', creditUrl: 'https://unsplash.com/@sotti', sourceName: 'Unsplash' },
+    ],
+  },
+
+  // THAILAND
+  {
+    id: 'thailand',
+    name: 'Thailand (Bangkok/Chiang Mai)',
+    country: 'Thailand',
+    region: 'Bangkok / Chiang Mai / Phuket',
+    slug: 'thailand',
+    continent: 'asia',
+    rank: 12,
+    isHonorableMention: true,
+    shortBlurb: 'Affordable tropical paradise with new tax-free Bitcoin trading through 2029 and easy long-term visas.',
+    longDescription: `Thailand has long been popular with digital nomads for its affordable living, sunny climate, and welcoming culture – and now it's giving Bitcoin investors reasons to cheer. The Thai government approved a tax exemption (through 2029) on personal income from Bitcoin trading on licensed exchanges. If you trade Bitcoin on a Thai-regulated exchange, any profits are tax-free for the next 5 years (2025–2029).
+
+Thailand also offers a 10-year Long Term Resident (LTR) visa for wealthy individuals, investors, and retirees (criteria include about $1M in assets or $80k/year income) – a program designed to attract high-net-worth expats, including Bitcoin-rich individuals.
+
+Quality of life is a major draw. Places like Bangkok, Chiang Mai, and Phuket offer vibrant lifestyles at a fraction of Western costs. You can rent a luxury condo in Bangkok for what a basic apartment costs in New York or London. Thai food, beaches, and hospitality are world-renowned.
+
+Drawbacks: Profits made on overseas or unlicensed exchanges might not qualify for the exemption, so one would use local exchanges. Thai banks sometimes have inconsistent policies on Bitcoin-related inflows. The government has gone back and forth on regulations in the past.`,
+    tags: {
+      climate: 'tropical',
+      urbanity: 'major-city',
+      englishFriendly: true,
+      costTier: 'low',
+      safetyTier: 'safe',
+      visaRoutes: ['investment', 'digital-nomad', 'entrepreneur'],
+      timezoneBand: 'asia-pacific',
+      familyFriendly: true,
+      bitcoinLegalTender: false,
+      noCapitalGains: true,
+      euMember: false,
+    },
+    scores: {
+      taxHodl: 9,
+      taxTrade: 9,
+      regulation: 6,
+      safety: 7,
+      stability: 6,
+      costLiving: 9,
+      housing: 9,
+      education: 6,
+      visa: 8,
+      infra: 7,
+      lifestyleBase: 9,
+      cryptoCommunity: 6,
+    },
+    notes: {
+      tax: 'Tax exemption through 2029 on Bitcoin trading profits from licensed Thai exchanges. 0% capital gains for qualifying trades. Foreign income generally not taxed if not remitted.',
+      visa: '10-year Long Term Resident (LTR) visa for wealthy individuals ($1M+ assets or $80k/year income). Also tourist visas, retirement visas, and Elite visas available.',
+      safety: 'Generally safe – violent crime is rare, though petty theft can happen in tourist spots. Political stability has improved.',
+      education: 'International schools available in Bangkok and other major cities. Quality varies but good options exist for expat families.',
+      cost: 'Extremely affordable – rent a luxury condo for a fraction of Western prices. Food, transport, and entertainment are very cheap.',
+      cryptoCommunity: 'Growing Bitcoin community, especially in Bangkok and Chiang Mai. Licensed exchanges operate locally. Digital nomad scene is strong.',
+      infra: 'Good infrastructure in major cities. High-speed internet widely available. Modern hospitals and amenities.',
+      lifestyle: 'World-renowned beaches, cuisine, and hospitality. Vibrant expat communities. Tropical climate year-round.',
+    },
+    specialRules: {
+      holdingPeriodRule: 'Tax exemption runs through 2029 for profits on licensed Thai exchanges. Must use regulated local exchanges to qualify.',
+      other: 'LTR visa program targets wealthy individuals and digital nomads. Banks may have varying policies on Bitcoin-related transfers.',
+    },
+    images: [
+      { url: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200', alt: 'Bangkok temples', creditName: 'Florian Wehde', creditUrl: 'https://unsplash.com/@florianwehde', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200', alt: 'Thailand beach', creditName: 'Sumit Chinchane', creditUrl: 'https://unsplash.com/@sumitchinchane', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200', alt: 'Chiang Mai', creditName: 'Mathew Schwartz', creditUrl: 'https://unsplash.com/@cadophoto', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=1200', alt: 'Thai street food', creditName: 'Lisheng Chang', creditUrl: 'https://unsplash.com/@changlisheng', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=1200', alt: 'Phuket coastline', creditName: 'Sumit Chinchane', creditUrl: 'https://unsplash.com/@sumitchinchane', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200', alt: 'Bangkok skyline night', creditName: 'Florian Wehde', creditUrl: 'https://unsplash.com/@florianwehde', sourceName: 'Unsplash' },
+    ],
+  },
+
+  // GEORGIA
+  {
+    id: 'georgia',
+    name: 'Georgia (Tbilisi)',
+    country: 'Georgia',
+    region: 'Tbilisi',
+    slug: 'georgia',
+    continent: 'europe',
+    rank: 13,
+    isHonorableMention: true,
+    shortBlurb: 'True 0% Bitcoin tax, ultra-low costs, easy residency, and a growing expat hub in the Caucasus.',
+    longDescription: `Georgia (the country in the Caucasus) is a hidden gem among Bitcoin-friendly jurisdictions. It offers a true 0% tax on Bitcoin gains for individuals. Georgian tax authorities explicitly exempt profits from selling Bitcoin from income tax, as long as it's your own assets and not part of a business.
+
+Georgia's tax system is largely territorial – foreign-sourced income is not taxed even if you become a tax resident, and there are no wealth or inheritance taxes. This ultra-friendly regime, combined with very low living costs, has made Tbilisi a growing hub for Bitcoin expats and nomads.
+
+Getting set up is straightforward. Many nationalities can stay visa-free for 365 days, and to maintain tax residency you only need to spend half the year in-country. You can formalize residency by buying property over ~$100k or starting a business. Georgia even has a favorable "virtual zone" regime for IT businesses with 0% corporate tax on export income.
+
+Drawbacks: Georgia borders Russia and has ongoing territorial disputes, though Tbilisi itself remains peaceful. Language can be a barrier outside expat circles. Infrastructure is developing but not first-world.`,
+    tags: {
+      climate: 'temperate',
+      urbanity: 'city',
+      englishFriendly: false,
+      costTier: 'low',
+      safetyTier: 'safe',
+      visaRoutes: ['investment', 'entrepreneur', 'digital-nomad'],
+      timezoneBand: 'middle-east',
+      familyFriendly: false,
+      bitcoinLegalTender: false,
+      noCapitalGains: true,
+      euMember: false,
+    },
+    scores: {
+      taxHodl: 10,
+      taxTrade: 10,
+      regulation: 7,
+      safety: 7,
+      stability: 5,
+      costLiving: 10,
+      housing: 10,
+      education: 5,
+      visa: 9,
+      infra: 6,
+      lifestyleBase: 7,
+      cryptoCommunity: 6,
+    },
+    notes: {
+      tax: 'True 0% tax on Bitcoin gains for individuals. Territorial system means foreign income is also untaxed. No wealth or inheritance tax.',
+      visa: 'Visa-free for 365 days for many nationalities. Easy residency via property purchase (~$100k) or business registration. Very welcoming to foreigners.',
+      safety: 'Tbilisi is generally safe with low violent crime. Some geopolitical concerns due to proximity to Russia and territorial disputes.',
+      education: 'Limited international school options. Not ideal for families seeking top-tier education.',
+      cost: 'Extremely low cost of living – rent, food, and transport cost a fraction of Western prices. Great value for digital nomads.',
+      cryptoCommunity: 'Growing expat and Bitcoin community in Tbilisi. Co-working spaces and cafes cater to digital nomads. Cheap electricity attracted Bitcoin miners.',
+      infra: 'Developing infrastructure. High-speed internet available in cities. Some services may be inconsistent outside Tbilisi.',
+      lifestyle: 'Unique cultural blend of European and Asian influences. Charming old town, growing modern sector, excellent wine and cuisine.',
+    },
+    specialRules: {
+      freeZone: '"Virtual Zone" companies enjoy 0% corporate tax on export income – popular for IT and Bitcoin businesses.',
+      other: 'Cheap hydroelectric power has attracted Bitcoin miners. Very easy to set up residency compared to most countries.',
+    },
+    images: [
+      { url: 'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1200', alt: 'Tbilisi old town', creditName: 'Julia Sese', creditUrl: 'https://unsplash.com/@juliasese', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1558431382-92e6d5d51e68?w=1200', alt: 'Georgian mountains', creditName: 'Shalva Manvelidze', creditUrl: 'https://unsplash.com/@shalvamanvelidze', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200', alt: 'Tbilisi architecture', creditName: 'Julia Sese', creditUrl: 'https://unsplash.com/@juliasese', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1542820229-081e0c12af0b?w=1200', alt: 'Georgian wine country', creditName: 'Shalva Manvelidze', creditUrl: 'https://unsplash.com/@shalvamanvelidze', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1583266335095-b57a6d3c7a66?w=1200', alt: 'Tbilisi cityscape', creditName: 'Julia Sese', creditUrl: 'https://unsplash.com/@juliasese', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1555217851-6141535c9797?w=1200', alt: 'Georgian church', creditName: 'Shalva Manvelidze', creditUrl: 'https://unsplash.com/@shalvamanvelidze', sourceName: 'Unsplash' },
+    ],
+  },
+
+  // URUGUAY
+  {
+    id: 'uruguay',
+    name: 'Uruguay (Montevideo)',
+    country: 'Uruguay',
+    region: 'Montevideo / Punta del Este',
+    slug: 'uruguay',
+    continent: 'south-america',
+    rank: 14,
+    isHonorableMention: true,
+    shortBlurb: 'South America\'s safest country with 5-10 year tax holiday on foreign income and strong institutions.',
+    longDescription: `Uruguay is a safe, understated country in South America with excellent institutions. New residents get a 5-year (up to 10-year) tax holiday on all foreign-sourced income – which would include Bitcoin profits made abroad or on foreign exchanges. Even after that period, foreign income can remain untaxed and local Bitcoin gains are taxed at only 12%.
+
+Uruguay is politically stable and offers a high quality of life, often ranking highest in Latin America for safety, democracy, and infrastructure. It's sometimes called the "Switzerland of South America" for its stability and banking sector.
+
+The country offers easy residency via property investment (~$380k) or income qualifications. Montevideo has a European feel with good restaurants, beaches, and a growing tech scene. Punta del Este is a glamorous beach resort popular with wealthy South Americans.
+
+Drawbacks: Relatively small country with limited entertainment compared to major cities. Cost of living is higher than neighboring countries. Spanish is essential outside expat areas.`,
+    tags: {
+      climate: 'temperate',
+      urbanity: 'city',
+      englishFriendly: false,
+      costTier: 'medium',
+      safetyTier: 'very-safe',
+      visaRoutes: ['investment', 'entrepreneur', 'digital-nomad'],
+      timezoneBand: 'americas',
+      familyFriendly: true,
+      bitcoinLegalTender: false,
+      noCapitalGains: true,
+      euMember: false,
+    },
+    scores: {
+      taxHodl: 9,
+      taxTrade: 8,
+      regulation: 7,
+      safety: 9,
+      stability: 9,
+      costLiving: 6,
+      housing: 6,
+      education: 7,
+      visa: 7,
+      infra: 7,
+      lifestyleBase: 7,
+      cryptoCommunity: 4,
+    },
+    notes: {
+      tax: '5-10 year tax holiday on foreign-sourced income for new residents. After that, foreign income can remain untaxed. Local Bitcoin gains taxed at only 12%.',
+      visa: 'Easy residency via property investment (~$380k) or income qualifications. Welcoming to foreign investors and retirees.',
+      safety: 'Safest country in South America. Strong rule of law, stable democracy, low corruption. Often called "Switzerland of South America."',
+      education: 'Good public education system by regional standards. International schools available in Montevideo.',
+      cost: 'Higher than neighboring countries but reasonable by Western standards. Punta del Este is expensive; Montevideo more affordable.',
+      cryptoCommunity: 'Small but growing. Not a major Bitcoin hub but regulations are favorable and banking is sophisticated.',
+      infra: 'Good infrastructure for the region. Reliable utilities, decent internet, modern healthcare.',
+      lifestyle: 'European-influenced culture, excellent beef and wine, beautiful beaches. Laid-back lifestyle with good work-life balance.',
+    },
+    specialRules: {
+      holdingPeriodRule: 'Tax holiday of 5-10 years on foreign-sourced income for new residents. Very favorable for Bitcoin holders with offshore gains.',
+      other: 'Strong banking sector with experience handling international clients. Stable currency pegged approach.',
+    },
+    images: [
+      { url: 'https://images.unsplash.com/photo-1586981267466-fc5b9a80e8a9?w=1200', alt: 'Montevideo waterfront', creditName: 'Jimmy Conover', creditUrl: 'https://unsplash.com/@jconover', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1597933607810-0f212d1d9f50?w=1200', alt: 'Punta del Este', creditName: 'Josefina Lacroze', creditUrl: 'https://unsplash.com/@josefinalacroze', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1569959220744-ff553533f492?w=1200', alt: 'Uruguay countryside', creditName: 'Ramiro Pianarosa', creditUrl: 'https://unsplash.com/@rpianarosa', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200', alt: 'Uruguay beach', creditName: 'Sean O.', creditUrl: 'https://unsplash.com/@seano', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?w=1200', alt: 'Colonial architecture', creditName: 'Jimmy Conover', creditUrl: 'https://unsplash.com/@jconover', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200', alt: 'South American vineyard', creditName: 'Kym Ellis', creditUrl: 'https://unsplash.com/@kymellis', sourceName: 'Unsplash' },
     ],
   },
 ];
