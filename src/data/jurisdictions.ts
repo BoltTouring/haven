@@ -974,6 +974,215 @@ Drawbacks: Relatively small country with limited entertainment compared to major
       { url: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200', alt: 'South American vineyard', creditName: 'Kym Ellis', creditUrl: 'https://unsplash.com/@kymellis', sourceName: 'Unsplash' },
     ],
   },
+
+  // ============================================
+  // BITCOIN COMMUNITY HUBS
+  // ============================================
+
+  // MADEIRA (distinct from mainland Portugal for its Bitcoin community)
+  {
+    id: 'madeira',
+    name: 'Madeira (Bitcoin Atlantic Hub)',
+    country: 'Portugal',
+    region: 'Funchal / Ponta do Sol',
+    slug: 'madeira',
+    continent: 'europe',
+    rank: 15,
+    isHonorableMention: true,
+    shortBlurb: 'Atlantic island with government-backed Bitcoin adoption, major conferences, and Portugal\'s 0% long-term gains tax.',
+    longDescription: `Madeira has been proactively courting the Bitcoin community since 2022 when its President announced a pro-Bitcoin stance. This led to FREE Madeira, a non-profit initiative promoting Bitcoin education and adoption on the island.
+
+In 2024, Madeira hosted Bitcoin Atlantis, a major conference attracting 5,000+ participants and 120 speakers – one of the largest Bitcoin events in Europe. The local community has regular meetups, workshops, and merchants accepting BTC via Lightning.
+
+As part of Portugal, Madeira offers 0% tax on Bitcoin gains held over 1 year (28% flat rate for short-term). The Non-Habitual Resident (NHR) scheme provides additional tax benefits. Quality of life is exceptional: very safe (Portugal ranks top 5 in Global Peace Index), excellent healthcare (EU standard), and stunning natural beauty.
+
+Drawbacks: Cost of living has risen with digital nomad interest. Some imported goods are pricier due to island logistics. Portuguese language helps for full integration outside expat circles.`,
+    tags: {
+      climate: 'subtropical',
+      urbanity: 'city',
+      englishFriendly: true,
+      costTier: 'medium',
+      safetyTier: 'very-safe',
+      visaRoutes: ['digital-nomad', 'investment', 'golden-visa', 'entrepreneur'],
+      timezoneBand: 'europe-africa',
+      familyFriendly: true,
+      bitcoinLegalTender: false,
+      noCapitalGains: false,
+      euMember: true,
+    },
+    scores: {
+      taxHodl: 10,
+      taxTrade: 5,
+      regulation: 8,
+      safety: 9,
+      stability: 9,
+      costLiving: 6,
+      housing: 6,
+      education: 8,
+      visa: 8,
+      infra: 9,
+      lifestyleBase: 9,
+      cryptoCommunity: 9,
+    },
+    notes: {
+      tax: '0% on Bitcoin held >1 year. Short-term gains taxed at 28% flat rate. NHR program offers 10-year tax benefits on foreign income for new residents.',
+      visa: 'D7 passive income visa (~€760/month), D8 digital nomad visa (~€3,480/month). EU citizens have freedom of movement. Citizenship possible after 5 years.',
+      safety: 'Very safe – Portugal consistently ranks top 5 in Global Peace Index. Low crime, close-knit island community, strong rule of law.',
+      education: 'Multiple international schools (British/IB curricula). International School of Madeira, International Sharing School. Tuition ~$5,700-$12,700/year.',
+      cost: 'Moderate for Western Europe. Single ~$1,500/month, family ~$3,200/month including rent. Cheaper than mainland Portugal cities.',
+      cryptoCommunity: 'Government-backed Bitcoin adoption. FREE Madeira initiative. Bitcoin Atlantis conference (5,000+ attendees). Regular meetups and Lightning merchants.',
+      infra: 'Excellent – fiber internet widely available (200-500 Mbps), reliable power, modern roads with tunnels. Daily flights to Lisbon and European cities.',
+      lifestyle: 'Stunning volcanic scenery, year-round mild climate, hiking, beaches. Vibrant expat community. Digital Nomad Village in Ponta do Sol.',
+    },
+    specialRules: {
+      holdingPeriodRule: 'Bitcoin held >1 year is tax-free. Under 1 year faces 28% flat rate. Staking income taxed at 28%.',
+      other: 'FREE Madeira non-profit drives adoption. Some merchants and crypto ATMs in Funchal accept Bitcoin. Part of EU/Schengen zone.',
+    },
+    images: [
+      { url: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=1200', alt: 'Funchal Madeira harbor', creditName: 'Sandro Gonzalez', creditUrl: 'https://unsplash.com/@sandrogonzalez', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200', alt: 'Madeira coastline', creditName: 'Sven Scheuermeier', creditUrl: 'https://unsplash.com/@sveninho', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=1200', alt: 'Madeira mountains', creditName: 'Sven Scheuermeier', creditUrl: 'https://unsplash.com/@sveninho', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=1200', alt: 'Funchal old town', creditName: 'Nick Karvounis', creditUrl: 'https://unsplash.com/@nickkarvounis', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1200', alt: 'Madeira natural pools', creditName: 'Sven Scheuermeier', creditUrl: 'https://unsplash.com/@sveninho', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200', alt: 'Atlantic island sunset', creditName: 'Omer Sattaf', creditUrl: 'https://unsplash.com/@omersattaf', sourceName: 'Unsplash' },
+    ],
+  },
+
+  // BITCOIN ISLAND - BORACAY, PHILIPPINES
+  {
+    id: 'boracay-bitcoin-island',
+    name: 'Boracay (Bitcoin Island)',
+    country: 'Philippines',
+    region: 'Aklan Province',
+    slug: 'boracay-bitcoin-island',
+    continent: 'asia',
+    rank: 16,
+    isHonorableMention: true,
+    shortBlurb: 'Tropical paradise with 250+ Lightning merchants – one of the world\'s most active Bitcoin circular economies.',
+    longDescription: `Boracay has earned the nickname "Bitcoin Island" thanks to Pouch.ph, a Lightning payments company that onboarded over 250 local merchants to accept Bitcoin. Cafes, restaurants, water-sport shops, even small sari-sari stores accept BTC via Lightning QR codes.
+
+The Bitcoin Island Retreat (March 2023) brought global Bitcoiners to experience one of the world's most active Bitcoin micro-economies. You can genuinely live on Bitcoin here – paying for meals, activities, and daily expenses in sats.
+
+The Philippines taxes crypto gains at up to 15% (no long-term exemption like Portugal). A new Digital Nomad Visa launching June 2025 will allow 1-2 year stays for remote workers with $2,000+/month income.
+
+Drawbacks: Small island with limited healthcare (no hospital, must boat to mainland for serious issues). No high school on-island. Higher costs than mainland Philippines due to tourism. Occasional typhoons and power outages.`,
+    tags: {
+      climate: 'tropical',
+      urbanity: 'island',
+      englishFriendly: true,
+      costTier: 'medium',
+      safetyTier: 'safe',
+      visaRoutes: ['digital-nomad', 'investment', 'entrepreneur'],
+      timezoneBand: 'asia-pacific',
+      familyFriendly: false,
+      bitcoinLegalTender: false,
+      noCapitalGains: false,
+      euMember: false,
+    },
+    scores: {
+      taxHodl: 7,
+      taxTrade: 6,
+      regulation: 6,
+      safety: 7,
+      stability: 7,
+      costLiving: 7,
+      housing: 7,
+      education: 4,
+      visa: 8,
+      infra: 6,
+      lifestyleBase: 9,
+      cryptoCommunity: 10,
+    },
+    notes: {
+      tax: 'Crypto gains taxed up to 15% capital gains tax. No long-term holding exemption. Frequent trading may be taxed as income (up to 35%).',
+      visa: 'Visa-free 30 days, extendable to 36 months via renewals. SRRV retirement visa ($10-50k deposit). Digital Nomad Visa launching June 2025 (1-2 years, $2k/month income).',
+      safety: 'Safe tourist island with police presence. Petty theft possible but violent crime rare. Limited medical facilities – serious emergencies require mainland evacuation.',
+      education: 'One international school (Boracay European International School) for grades up to 8. No high school on island – families send older kids to mainland.',
+      cost: 'Higher than mainland PH but affordable globally. Single ~$1,500/month, family ~$3,200/month. Comparable to Manila prices for housing.',
+      cryptoCommunity: '250+ merchants accepting Bitcoin via Lightning (Pouch.ph). One of the world\'s highest Bitcoin adoption densities. Bitcoin Island Retreats, active meetups.',
+      infra: 'Fiber internet available (50-100 Mbps). No private cars allowed – e-trikes only. 15-min ferry + 1hr flight to Manila. Occasional power outages.',
+      lifestyle: 'World-famous White Beach, water sports paradise, vibrant nightlife. Small island (7km) with tight community. Tropical year-round.',
+    },
+    specialRules: {
+      other: 'No cars allowed on island. SRRV retirement visa is one of easiest globally ($10-20k deposit for 50+). Philippines planning global crypto tax reporting by 2028.',
+    },
+    images: [
+      { url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200', alt: 'Boracay White Beach', creditName: 'Sean O.', creditUrl: 'https://unsplash.com/@seano', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200', alt: 'Boracay sunset', creditName: 'Sean O.', creditUrl: 'https://unsplash.com/@seano', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200', alt: 'Philippine beach paradise', creditName: 'Sean O.', creditUrl: 'https://unsplash.com/@seano', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1200', alt: 'Tropical island aerial', creditName: 'Yolanda Sun', creditUrl: 'https://unsplash.com/@yolandasun', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?w=1200', alt: 'Beach resort', creditName: 'Sean O.', creditUrl: 'https://unsplash.com/@seano', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=1200', alt: 'Palm trees beach', creditName: 'Jasper Boer', creditUrl: 'https://unsplash.com/@jasperboer', sourceName: 'Unsplash' },
+    ],
+  },
+
+  // BITCOIN JUNGLE - COSTA RICA
+  {
+    id: 'bitcoin-jungle-costa-rica',
+    name: 'Bitcoin Jungle (Costa Rica)',
+    country: 'Costa Rica',
+    region: 'Uvita / Dominical / Ojochal',
+    slug: 'bitcoin-jungle',
+    continent: 'central-america',
+    rank: 17,
+    isHonorableMention: true,
+    shortBlurb: 'Grassroots Bitcoin circular economy with 600+ merchants, weekly Lightning farmer\'s markets, and jungle paradise lifestyle.',
+    longDescription: `Bitcoin Jungle is a grassroots project launched in late 2021 in Costa Rica's Southern Pacific zone (Uvita/Dominical area) to create a circular Bitcoin economy. Using the Bitcoin Jungle app (a custom Lightning wallet), over 600 merchants now accept Bitcoin.
+
+Weekly farmer's markets in Uvita see vendors doing up to 25% of sales in BTC via Lightning. From coffee at Café Mono Congo to groceries and tour operators – you can live substantially on Bitcoin. Jack Dorsey has visited multiple times, reportedly interested in this bottom-up experiment.
+
+Costa Rica offers 15% capital gains tax, but its territorial system may exempt foreign-sourced gains. The Digital Nomad Visa (2022) allows 1-2 year stays with $3,000/month income. Costa Rica has no army, excellent healthcare (best in LatAm), and the famous "Pura Vida" lifestyle.
+
+Drawbacks: Cost of living surprisingly high (imports expensive). Car often needed. 3.5 hours to San José airport. Rainy season floods, insects, and some petty theft (secure your property).`,
+    tags: {
+      climate: 'tropical',
+      urbanity: 'town',
+      englishFriendly: true,
+      costTier: 'medium',
+      safetyTier: 'safe',
+      visaRoutes: ['digital-nomad', 'investment', 'entrepreneur'],
+      timezoneBand: 'americas',
+      familyFriendly: true,
+      bitcoinLegalTender: false,
+      noCapitalGains: false,
+      euMember: false,
+    },
+    scores: {
+      taxHodl: 8,
+      taxTrade: 7,
+      regulation: 6,
+      safety: 7,
+      stability: 8,
+      costLiving: 5,
+      housing: 5,
+      education: 6,
+      visa: 8,
+      infra: 6,
+      lifestyleBase: 9,
+      cryptoCommunity: 10,
+    },
+    notes: {
+      tax: '15% capital gains tax on Bitcoin profits. Territorial system may exempt foreign-sourced gains. No wealth tax. Crypto-to-crypto trades not currently taxed.',
+      visa: 'Digital Nomad Visa: 1-2 years with $3,000/month income. Pensionado ($1k/month pension), Rentista ($2.5k/month), or Investor ($150k investment). Permanent residency after 3 years.',
+      safety: 'Safe by Central American standards. Petty theft possible (secure valuables). Tight expat community. No army – Costa Rica dissolved military in 1948.',
+      education: 'Bilingual international schools: Centro Educativo Costa Ballena, Uvita Christian Academy. English/Spanish curricula. Tuition ~$500-$1,300/month.',
+      cost: 'Higher than expected – imports expensive. Single ~$1,800/month, family ~$3,400/month. Local food cheap, imported goods 2-3x US prices.',
+      cryptoCommunity: '600+ merchants accepting Bitcoin via Lightning. Bitcoin Jungle app and maps. Weekly farmer\'s markets with BTC. Co-working "Centro de Libertad" opened.',
+      infra: 'Fiber reaching many areas (100 Mbps ~$40). Some remote properties need Starlink. Car recommended (4x4 for hills). 3.5hr drive to San José airport.',
+      lifestyle: 'Jungle meets beach – surfing, wildlife, waterfalls. Strong permaculture/sustainability community. "Pura Vida" lifestyle. Rainy season Jun-Nov.',
+    },
+    specialRules: {
+      other: 'Healthcare excellent – new Hospital de Osa 25 min away. Must join public healthcare (Caja) as resident (~7-11% of income, then care is free). Dual citizenship allowed.',
+    },
+    images: [
+      { url: 'https://images.unsplash.com/photo-1518259102261-b40117eabbc9?w=1200', alt: 'Costa Rica jungle', creditName: 'Zdenek Machacek', creditUrl: 'https://unsplash.com/@zmachacek', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1502780402662-acc01917d15a?w=1200', alt: 'Costa Rica beach', creditName: 'Etienne Delorieux', creditUrl: 'https://unsplash.com/@etiennedelorieux', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200', alt: 'Rainforest waterfall', creditName: 'Benjamin Voros', creditUrl: 'https://unsplash.com/@vorosbenisop', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200', alt: 'Pacific coast sunset', creditName: 'Omer Sattaf', creditUrl: 'https://unsplash.com/@omersattaf', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200', alt: 'Costa Rica mountains', creditName: 'Kalen Emsley', creditUrl: 'https://unsplash.com/@kalenemsley', sourceName: 'Unsplash' },
+      { url: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200', alt: 'Surfing waves', creditName: 'Jeremy Bishop', creditUrl: 'https://unsplash.com/@jeremybishop', sourceName: 'Unsplash' },
+    ],
+  },
 ];
 
 // Helper function to get jurisdiction by slug
