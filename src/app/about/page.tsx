@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { AlertCircle, ArrowRight, Scale, Calculator, Users, Globe, Shield, DollarSign, GraduationCap, Plane, Wifi, Heart, Bitcoin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata = {
@@ -183,8 +183,9 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-500 mt-1">•</span>
-                  <strong>Puerto Rico</strong> receives a +25 point bonus due to Act 60, which allows
-                  0% capital gains for bona fide residents while retaining U.S. citizenship
+                  <strong>Puerto Rico</strong> receives a +25 point bonus due to Act 60. The
+                  0% rate is strongest for qualifying applications filed by Dec. 31, 2026;
+                  later applicants are expected to face a 4% Puerto Rico rate.
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-500 mt-1">•</span>
@@ -197,12 +198,14 @@ export default function AboutPage() {
             <Card className="p-6 border-green-200 bg-green-50">
               <h3 className="font-semibold text-slate-900 mb-3">For Non-Americans</h3>
               <p className="text-slate-600 mb-4">
-                Most countries only tax residents, giving non-Americans much more flexibility:
+                Many non-Americans have more flexibility, but home-country exit taxes,
+                domicile rules, and source-country rules still matter:
               </p>
               <ul className="space-y-2 text-slate-600">
                 <li className="flex items-start gap-2">
                   <span className="text-green-500 mt-1">•</span>
-                  Moving to a zero-tax jurisdiction can eliminate your Bitcoin tax burden entirely
+                  Moving to a zero-tax jurisdiction can be highly effective when your
+                  home-country tax position is clean
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-500 mt-1">•</span>
@@ -210,7 +213,8 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-500 mt-1">•</span>
-                  UAE, Singapore, Cayman, and others with zero capital gains are fully effective
+                  UAE, Singapore, Cayman, and others with zero capital gains can be fully
+                  effective for the right taxpayer profile
                 </li>
               </ul>
             </Card>
@@ -244,7 +248,7 @@ export default function AboutPage() {
 Where:
 - Each criterion is scored 0-10
 - Weights vary by preset (0.3 to 1.5)
-- american_modifier = +25 for Puerto Rico, -5/-3 for others
+- american_modifier = +25 for Puerto Rico, -5/-3 for other zero-tax jurisdictions
 - deal_breaker_count = number of violated requirements`}
             </pre>
           </Card>
@@ -284,7 +288,18 @@ Where:
           </ul>
           <p className="text-slate-600">
             Scores are updated periodically as regulations and conditions change.
-            Last updated: January 2026.
+            Last reviewed: May 2026.
+          </p>
+        </section>
+
+        {/* Privacy */}
+        <section>
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">Privacy Model</h2>
+          <p className="text-slate-600">
+            Quiz answers stay in volatile browser memory only. The app does not save
+            answers to localStorage, sessionStorage, cookies, URL parameters, or a backend.
+            Refreshing the page or sharing a results URL intentionally falls back to a
+            generic browse ranking.
           </p>
         </section>
 

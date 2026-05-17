@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronDown,
@@ -12,44 +11,36 @@ import {
   Settings,
   AlertTriangle,
   Check,
-  X,
-  Info,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Slider } from "@/components/ui/slider";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import type { QuizAnswers, ScoredJurisdiction, WeightPreset, ResultFilters, Continent, Climate, CostTier, TimezoneBand } from "@/types";
+import type { ScoredJurisdiction, WeightPreset, ResultFilters, Continent, Climate, CostTier, TimezoneBand } from "@/types";
 import { jurisdictions } from "@/data/jurisdictions";
-import { scoreJurisdictions, weightPresets, getRecommendedPreset } from "@/lib/scoring";
-import { decodeQuizFromUrl, defaultQuizAnswers, loadQuizAnswers } from "@/lib/quiz-store";
-import { formatScore, getScoreColor, getTierLabel, getContinentLabel, getClimateLabel } from "@/lib/utils";
+import { scoreJurisdictions, getRecommendedPreset } from "@/lib/scoring";
+import { clearLegacyStoredQuizData, defaultQuizAnswers, loadQuizAnswers } from "@/lib/quiz-store";
+import { formatScore, getScoreColor, getTierLabel, getClimateLabel } from "@/lib/utils";
 
 export function ResultsClient() {
-  const searchParams = useSearchParams();
-  const [answers, setAnswers] = useState<QuizAnswers>(defaultQuizAnswers);
-  const [preset, setPreset] = useState<WeightPreset>("balanced");
+  const [initialQuizState] = useState(() => {
+    const inMemoryAnswers = loadQuizAnswers();
+
+    return {
+      answers: inMemoryAnswers ?? defaultQuizAnswers,
+      hasPersonalAnswers: inMemoryAnswers !== null,
+      preset: inMemoryAnswers ? getRecommendedPreset(inMemoryAnswers) : "balanced" as WeightPreset,
+    };
+  });
+  const [preset, setPreset] = useState<WeightPreset>(initialQuizState.preset);
   const [showFilters, setShowFilters] = useState(false);
-  const [showWeights, setShowWeights] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
   const [filters, setFilters] = useState<ResultFilters>({});
-  const [isLoaded, setIsLoaded] = useState(false);
+  const answers = initialQuizState.answers;
+  const hasPersonalAnswers = initialQuizState.hasPersonalAnswers;
 
-  // Load answers from URL or localStorage
   useEffect(() => {
-    const urlAnswers = decodeQuizFromUrl(searchParams.toString());
-    if (urlAnswers) {
-      setAnswers(urlAnswers);
-      setPreset(getRecommendedPreset(urlAnswers));
-    } else {
-      const stored = loadQuizAnswers();
-      setAnswers(stored);
-      setPreset(getRecommendedPreset(stored));
-    }
-    setIsLoaded(true);
-  }, [searchParams]);
+    clearLegacyStoredQuizData();
+  }, []);
 
   // Score and filter jurisdictions
   const scoredJurisdictions = useMemo(() => {
@@ -70,10 +61,6 @@ export function ResultsClient() {
 
   const clearFilters = () => setFilters({});
 
-  if (!isLoaded) {
-    return <ResultsLoadingSkeleton />;
-  }
-
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Header */}
@@ -82,7 +69,12 @@ export function ResultsClient() {
           Your Jurisdiction Rankings
         </h1>
         <p className="text-slate-600">
-          {answers.citizenship === "american" || answers.citizenship === "dual" ? (
+          {!hasPersonalAnswers ? (
+            <span className="flex items-center gap-2">
+              <Badge variant="secondary">Private Browse</Badge>
+              Generic rankings shown. Take the quiz for in-memory recommendations that are not stored.
+            </span>
+          ) : answers.citizenship === "american" || answers.citizenship === "dual" ? (
             <span className="flex items-center gap-2">
               <Badge variant="info">American</Badge>
               Rankings optimized for U.S. citizens (Puerto Rico strongly favored)
@@ -175,6 +167,7 @@ export function ResultsClient() {
                     { value: "middle-east", label: "Middle East" },
                     { value: "caribbean", label: "Caribbean" },
                     { value: "central-america", label: "Central America" },
+                    { value: "south-america", label: "South America" },
                     { value: "north-america", label: "North America" },
                   ]}
                 />
@@ -271,7 +264,6 @@ export function ResultsClient() {
               jurisdiction={j}
               rank={index + 1}
               showDetails={showDetails}
-              isAmerican={answers.citizenship === "american" || answers.citizenship === "dual"}
             />
           ))
         )}
@@ -284,10 +276,9 @@ interface JurisdictionCardProps {
   jurisdiction: ScoredJurisdiction;
   rank: number;
   showDetails: boolean;
-  isAmerican: boolean;
 }
 
-function JurisdictionCard({ jurisdiction: j, rank, showDetails, isAmerican }: JurisdictionCardProps) {
+function JurisdictionCard({ jurisdiction: j, rank, showDetails }: JurisdictionCardProps) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -455,31 +446,6 @@ function FilterSelect({ label, value, onChange, options }: FilterSelectProps) {
           <option key={opt.value} value={opt.value}>{opt.label}</option>
         ))}
       </select>
-    </div>
-  );
-}
-
-function ResultsLoadingSkeleton() {
-  return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div className="mb-8">
-        <div className="h-8 w-64 bg-slate-200 rounded animate-pulse mb-2" />
-        <div className="h-4 w-96 bg-slate-200 rounded animate-pulse" />
-      </div>
-      <div className="space-y-4">
-        {[1, 2, 3, 4, 5].map((i) => (
-          <div key={i} className="bg-white rounded-xl border border-slate-200 p-4">
-            <div className="flex gap-4">
-              <div className="w-48 h-32 bg-slate-200 rounded animate-pulse" />
-              <div className="flex-1 space-y-3">
-                <div className="h-6 w-48 bg-slate-200 rounded animate-pulse" />
-                <div className="h-4 w-32 bg-slate-200 rounded animate-pulse" />
-                <div className="h-4 w-full bg-slate-200 rounded animate-pulse" />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
     </div>
   );
 }

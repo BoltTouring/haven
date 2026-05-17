@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import { Bitcoin, Menu, X } from "lucide-react";
+import { Bitcoin, Menu } from "lucide-react";
 import "./globals.css";
 
 const inter = Inter({

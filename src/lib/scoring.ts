@@ -227,7 +227,7 @@ function calculateAmericanModifier(
   // Puerto Rico gets a massive boost for Americans
   if (jurisdiction.id === 'puerto-rico') {
     modifier = 25; // Huge boost
-    warnings.push('🇺🇸 Act 60 allows 0% capital gains for US citizens who become bona fide residents');
+    warnings.push('🇺🇸 Act 60 remains the strongest US-citizen route, but the 0% decree is time-sensitive after 2026');
     return { modifier, warnings };
   }
 

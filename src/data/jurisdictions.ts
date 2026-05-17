@@ -223,10 +223,10 @@ Drawbacks: Cost of living is very high – Singapore often ties with Hong Kong, 
     continent: 'central-america',
     rank: 4,
     isHonorableMention: false,
-    shortBlurb: 'The world\'s first Bitcoin nation with legal tender status, zero Bitcoin tax, and tropical beach lifestyle.',
-    longDescription: `El Salvador put itself on the Bitcoin map by becoming the first country to adopt Bitcoin as legal tender in 2021. President Nayib Bukele's bold move means that businesses must accept Bitcoin (via the Chivo wallet) alongside the USD.
+    shortBlurb: 'The original Bitcoin nation: voluntary Bitcoin payments, tax incentives for foreign investors, and tropical beach lifestyle.',
+    longDescription: `El Salvador put itself on the Bitcoin map by becoming the first country to adopt Bitcoin as legal tender in 2021. A 2025 reform changed the practical picture: private-sector Bitcoin acceptance is now voluntary, tax payments are no longer made in Bitcoin, and state involvement in Chivo was reduced as part of the IMF-supported program.
 
-For expats: foreign investors pay no capital gains tax on Bitcoin – Bitcoin profits are exempt from tax by law. The government actively courts Bitcoiners, selling "Volcano Bonds", planning a Bitcoin City near a volcano, and offering fast-track residency for Bitcoin investors.
+For expats: foreign investors can still find one of the world's most visible Bitcoin communities, especially around El Zonte / Bitcoin Beach. The government continues to court Bitcoiners, but the policy should now be understood as pro-Bitcoin and voluntary rather than legal-tender mandatory.
 
 Beyond Bitcoin, El Salvador offers an affordable cost of living (you get much more for your money than in developed countries) and warm Pacific beaches (it's a surfer's paradise in spots like El Zonte, aka "Bitcoin Beach").
 
@@ -240,14 +240,14 @@ Drawbacks: The country historically had high crime, though there have been major
       visaRoutes: ['investment', 'entrepreneur', 'digital-nomad'],
       timezoneBand: 'americas',
       familyFriendly: false,
-      bitcoinLegalTender: true,
+      bitcoinLegalTender: false,
       noCapitalGains: true,
       euMember: false,
     },
     scores: {
       taxHodl: 10,
       taxTrade: 10,
-      regulation: 8,
+      regulation: 7,
       safety: 6,
       stability: 5,
       costLiving: 9,
@@ -256,21 +256,21 @@ Drawbacks: The country historically had high crime, though there have been major
       visa: 8,
       infra: 5,
       lifestyleBase: 7,
-      cryptoCommunity: 9,
+      cryptoCommunity: 8,
     },
     notes: {
-      tax: 'Zero capital gains tax on Bitcoin by law. Bitcoin profits are exempt from taxation. One of the most Bitcoin-friendly tax regimes in the world.',
+      tax: 'Bitcoin tax incentives remain attractive for foreign investors, but verify the exact exemption route before realizing gains. Treat this as a pro-Bitcoin jurisdiction, not a blanket personal tax ruling.',
       visa: 'Fast-track residency available for Bitcoin investors. Government actively courts Bitcoiners with welcoming policies. Relatively easy process.',
       safety: 'Major improvements in recent years – 2023 homicide rate of 2.4 per 100k is the lowest in the Americas after Canada. Controversial crackdown has dramatically reduced crime, though some concerns remain.',
       education: 'Below first-world standards. Expat families often rely on private schools or overseas options for quality education.',
       cost: 'Very affordable cost of living – you get much more for your money than in developed countries. Great value for digital nomads and retirees.',
-      cryptoCommunity: 'The birthplace of Bitcoin adoption! "Bitcoin Beach" (El Zonte), Volcano Bonds, Bitcoin City plans. Extremely engaged Bitcoin community and government support.',
+      cryptoCommunity: 'The birthplace of national Bitcoin adoption. "Bitcoin Beach" (El Zonte) remains a real community hub, though merchant acceptance is now voluntary rather than mandatory.',
       infra: 'Developing infrastructure – may find inconsistent services outside urban or resort areas. Internet and power can be unreliable in some locations.',
       lifestyle: 'Tropical Pacific beaches, surfer\'s paradise, warm climate year-round. El Zonte is a famous Bitcoin destination. Spanish is the main language.',
     },
     specialRules: {
-      legalTender: 'Bitcoin is legal tender alongside USD since 2021. A 2025 update relaxed requirements – Bitcoin is no longer mandatory for merchants but remains widely accepted.',
-      other: 'Government is actively building "Bitcoin City" near a volcano. Volcano Bonds offer unique investment opportunity.',
+      legalTender: 'Bitcoin was adopted as legal tender in 2021, but 2025 reforms removed mandatory acceptance and ended Bitcoin tax payments. Acceptance is voluntary.',
+      other: 'Government messaging remains pro-Bitcoin, but relocation planning should distinguish real local adoption from headline policy.',
     },
     images: [
       { url: 'https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?w=1200', alt: 'Tropical beach sunset', creditName: 'Sean O.', creditUrl: 'https://unsplash.com/@seano', sourceName: 'Unsplash' },
@@ -297,7 +297,7 @@ Drawbacks: The country historically had high crime, though there have been major
     shortBlurb: 'EU charm with tax-free long-term Bitcoin gains, vibrant Lisbon tech scene, and Mediterranean lifestyle.',
     longDescription: `Portugal has been a favorite among Bitcoiners, especially from Europe, thanks to its favorable tax stance on Bitcoin. In 2023 Portugal updated its policy – Bitcoin held less than 12 months is taxed at 28%, but any gains on Bitcoin held for a year or more remain tax-free for individuals. Long-term Bitcoin HODLers still pay 0%.
 
-Moreover, Portugal's Non-Habitual Resident (NHR) program can offer 10-year tax breaks on foreign-sourced income. Lifestyle: Portugal offers a lovely quality of life with a relatively low cost (one of Western Europe's most affordable countries). Mild Mediterranean climate, beautiful beaches in the Algarve, history and culture in Lisbon and Porto, and a growing international community.
+The old Non-Habitual Resident (NHR) regime is no longer open as a general expat tax break; new arrivals must look at the narrower IFICI / scientific research and innovation incentive or standard Portuguese rules. Lifestyle: Portugal offers a lovely quality of life with a relatively low cost by Western European standards. Mild Mediterranean climate, beautiful beaches in the Algarve, history and culture in Lisbon and Porto, and a growing international community.
 
 Lisbon has become a Bitcoin hub in the EU, hosting conferences and a vibrant startup scene. Safety is excellent – Portugal consistently ranks top 5–10 globally for peace and safety. English is widely spoken in urban areas.
 
@@ -330,8 +330,8 @@ Drawbacks: Bureaucracy can be slow. Short-term traders now face 28% tax. Real es
       cryptoCommunity: 8,
     },
     notes: {
-      tax: 'Long-term holders (>12 months) pay 0% on Bitcoin gains. Short-term gains taxed at 28%. NHR program offers 10-year tax breaks on foreign income.',
-      visa: 'Multiple options: Golden Visa (investment), D7 "digital nomad" visa for remote workers, entrepreneur visa. Popular with Bitcoin investors.',
+      tax: 'Long-term holders (>12 months) pay 0% on Bitcoin gains. Short-term gains are generally taxed at 28%. The old NHR regime was repealed for new entrants; IFICI is narrower and mainly targets qualifying innovation/research roles.',
+      visa: 'Multiple options: D7 passive income, D8 digital nomad, entrepreneur routes, and Golden Visa through eligible non-real-estate investments. Direct real estate no longer qualifies for new Golden Visa applications.',
       safety: 'Consistently ranks top 5–10 globally for peace and safety. Very low crime rates, welcoming to foreigners.',
       education: 'Good education system with quality international schools in major cities. Not top-tier like Switzerland but solid European standard.',
       cost: 'One of Western Europe\'s most affordable countries, though Lisbon real estate has climbed due to expat demand. Still cheaper than London or Paris.',
@@ -341,7 +341,7 @@ Drawbacks: Bureaucracy can be slow. Short-term traders now face 28% tax. Real es
     },
     specialRules: {
       holdingPeriodRule: 'Bitcoin held >12 months is tax-free. Under 12 months faces 28% capital gains tax.',
-      nhrProgram: 'Non-Habitual Resident (NHR) program offers 10-year tax benefits on foreign-sourced income for new residents.',
+      nhrProgram: 'The broad NHR program was repealed from 2024. Transitional cases may still exist, but new residents should evaluate IFICI or standard tax residency rules.',
     },
     images: [
       { url: 'https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=1200', alt: 'Lisbon colorful streets', creditName: 'Daniel Seßler', creditUrl: 'https://unsplash.com/@danielsessler', sourceName: 'Unsplash' },
@@ -379,7 +379,7 @@ Drawbacks: Island life is not for everyone. Grand Cayman is small and can feel i
       englishFriendly: true,
       costTier: 'very-high',
       safetyTier: 'very-safe',
-      visaRoutes: ['investment', 'citizenship-by-investment'],
+      visaRoutes: ['investment', 'employment'],
       timezoneBand: 'americas',
       familyFriendly: true,
       bitcoinLegalTender: false,
@@ -402,16 +402,16 @@ Drawbacks: Island life is not for everyone. Grand Cayman is small and can feel i
     },
     notes: {
       tax: 'Zero income tax, zero capital gains tax, zero estate or corporate taxes. One of the world\'s purest tax havens. Unlimited Bitcoin profits at 0%.',
-      visa: 'Residency requires significant investment – typically $1–2 million in real estate or business for residency certificates. Not easy for everyone.',
+      visa: 'Residency requires significant investment or employment authorization – typically substantial real estate/business commitments for investor residency. Cayman is not a simple citizenship-by-investment program.',
       safety: 'Very safe British Overseas Territory with low crime rates. Stable government and rule of law.',
       education: 'Good private schools available but options are limited by island size. Families may need to consider boarding school or remote options.',
       cost: 'High cost of living – most goods are imported. Groceries, cars, electricity, and beachside housing are expensive.',
-      cryptoCommunity: 'Major jurisdiction for Bitcoin hedge funds and exchanges due to tax status. Finance-oriented expat community with Bitcoin presence.',
+      cryptoCommunity: 'Major jurisdiction for Bitcoin funds and digital-asset businesses due to tax status and the VASP framework. Custody and trading platform services require licensing from April 2025.',
       infra: 'Good infrastructure for an island – reliable utilities, internet, banking. Some limitations due to size.',
       lifestyle: 'Beautiful beaches (Seven Mile Beach), diving, yachting, tropical paradise. Can feel isolating – not much urban excitement or cultural scene.',
     },
     specialRules: {
-      other: 'British Overseas Territory with stable governance. Popular domicile for Bitcoin hedge funds and exchanges.',
+      other: 'British Overseas Territory with stable governance. CIMA Phase Two licensing for virtual asset custody and trading platforms took effect on April 1, 2025.',
     },
     images: [
       { url: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1200', alt: 'Seven Mile Beach Cayman', creditName: 'Joel Vodell', creditUrl: 'https://unsplash.com/@joelvodell', sourceName: 'Unsplash' },
@@ -435,12 +435,12 @@ Drawbacks: Island life is not for everyone. Grand Cayman is small and can feel i
     continent: 'caribbean',
     rank: 7,
     isHonorableMention: false,
-    shortBlurb: 'The only way for Americans to pay 0% on Bitcoin gains while keeping citizenship – Act 60\'s powerful tax benefits.',
-    longDescription: `Puerto Rico deserves special mention for Americans. Under Act 60 (formerly Acts 20/22), U.S. citizens who become bona fide Puerto Rico residents can enjoy 0% capital gains tax and 0% tax on dividend/interest going forward. This includes Bitcoin gains on assets acquired after moving to PR.
+    shortBlurb: 'The strongest U.S.-citizen Bitcoin tax route, with a 2026 deadline before new Act 60 applicants face a 4% rate.',
+    longDescription: `Puerto Rico deserves special mention for Americans. Under Act 60 (formerly Acts 20/22), U.S. citizens who become bona fide Puerto Rico residents can enjoy 0% capital gains tax and 0% tax on dividend/interest going forward if they secure the Individual Resident Investor decree under the current pre-2027 rules. This includes Bitcoin gains on assets acquired after moving to PR.
 
 You essentially opt out of U.S. federal tax on Puerto Rico-sourced investment income, while still retaining your U.S. passport. Many Bitcoin millionaires relocated to PR after 2017 and 2020 for this reason.
 
-Lifestyle: PR offers a tropical island lifestyle with American familiarity. Uses USD, federal law applies in areas like defense and trade. Growing community of mainland American expats in areas like Dorado Beach and Condado. Beautiful beaches, rainforests, rich Latin culture.
+Act 38-2026 materially changes planning: applications filed after December 31, 2026 are expected to face a 4% Puerto Rico tax on dividends, interest, and certain post-residency capital gains, while the program is extended through 2055. Lifestyle: PR offers a tropical island lifestyle with American familiarity. Uses USD, federal law applies in areas like defense and trade. Growing community of mainland American expats in areas like Dorado Beach and Condado. Beautiful beaches, rainforests, rich Latin culture.
 
 Drawbacks: Infrastructure challenges – the island has been plagued by power grid issues and hurricane damage. Healthcare quality varies. Crime is higher than mainland U.S. averages. Act 60 has strict residency rules (183+ days/year, annual donations). Pre-move appreciation is still US-taxable.`,
     tags: {
@@ -471,8 +471,8 @@ Drawbacks: Infrastructure challenges – the island has been plagued by power gr
       cryptoCommunity: 8,
     },
     notes: {
-      tax: 'Act 60: 0% capital gains, dividends, and interest for bona fide PR residents. Only applies to gains on assets acquired after moving. Pre-move appreciation still US-taxable if realized within 10 years.',
-      visa: 'No visa needed for US citizens – automatic right to reside. Must become bona fide resident (183+ days/year, make PR primary home, sever mainland ties). Annual donation requirements.',
+      tax: 'Act 60: applications filed by Dec. 31, 2026 can still qualify for 0% on dividends, interest, and post-residency capital gains through 2035. Applications after that date are expected to face a 4% Puerto Rico tax through 2055. Pre-move appreciation remains a separate U.S./PR planning issue.',
+      visa: 'No visa needed for US citizens – automatic right to reside. Must become bona fide resident (183+ days/year, make PR primary home, sever mainland ties) and obtain/maintain the tax decree. Annual donation requirements apply.',
       safety: 'Higher crime than mainland US averages, though expats often live in gated communities with private security. Violent crime mostly localized.',
       education: 'Varies – some good private and international schools. Quality may not match top mainland options. Limited choices in some areas.',
       cost: 'Lower than many US cities, though wealthy enclaves like Dorado have seen prices rise. Generally affordable with a moderate budget.',
@@ -481,8 +481,8 @@ Drawbacks: Infrastructure challenges – the island has been plagued by power gr
       lifestyle: 'Tropical beaches, rainforests, rich Latin culture. San Juan has good dining and nightlife. American familiarity with Caribbean charm.',
     },
     specialRules: {
-      act60: 'Act 60 (formerly Acts 20/22) allows 0% capital gains, dividends, and interest for bona fide PR residents. Must live 183+ days/year, make annual donations, and only new gains qualify. Benefits slated through at least 2035.',
-      americanTaxNote: 'This is the only way for US citizens to legally pay 0% on Bitcoin gains while retaining citizenship. Any appreciation before becoming PR resident is still subject to US tax if realized within 10 years.',
+      act60: 'Act 60 (formerly Acts 20/22) allows 0% capital gains, dividends, and interest for qualifying bona fide PR residents who apply by Dec. 31, 2026. Later applicants are expected to face a 4% rate, with the program extended to 2055.',
+      americanTaxNote: 'This remains the clearest U.S.-citizen route to avoid federal tax on post-residency Puerto Rico-sourced Bitcoin gains while retaining citizenship. Pre-residency appreciation requires specialist planning.',
     },
     images: [
       { url: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=1200', alt: 'Old San Juan colorful streets', creditName: 'Fernando Jorge', creditUrl: 'https://unsplash.com/@fernandojorge', sourceName: 'Unsplash' },
@@ -583,7 +583,7 @@ Shorter-term trades are taxed at regular income rates (up to 45%). Germany is ve
 
 Berlin has a vibrant tech and startup scene with an active Bitcoin community. Munich offers more traditional German quality of life.
 
-Drawbacks: High taxes on other income and complexity in distinguishing what is taxable (staking, for example, may reset the one-year holding period in some cases). Weather is temperate to cold. Language barrier outside major cities.`,
+Drawbacks: High taxes on other income and complexity in distinguishing private investing from taxable activity. Crypto-to-crypto swaps and spending can count as disposals, and staking/mining rewards have their own income and basis rules. Weather is temperate to cold. Language barrier outside major cities.`,
     tags: {
       climate: 'temperate',
       urbanity: 'major-city',
@@ -612,7 +612,7 @@ Drawbacks: High taxes on other income and complexity in distinguishing what is t
       cryptoCommunity: 7,
     },
     notes: {
-      tax: 'Bitcoin held >1 year is explicitly tax-free (0%). Short-term trades taxed at regular income rates (up to 45%). Staking may reset the holding period.',
+      tax: 'Bitcoin held >1 year is explicitly tax-free for private assets. Disposals within 1 year are taxable as private sales transactions, with a €1,000 annual exemption threshold. Crypto-to-crypto swaps and spending are disposals.',
       visa: 'EU member with entrepreneur and employment visas. Not the easiest but achievable with right qualifications.',
       safety: 'Very safe with excellent rule of law. One of Europe\'s most stable countries.',
       education: 'Excellent education system with many free universities. Strong international schools in major cities.',
@@ -622,7 +622,7 @@ Drawbacks: High taxes on other income and complexity in distinguishing what is t
       lifestyle: 'Rich culture, history, good work-life balance. Temperate climate with cold winters. Language barrier outside cities.',
     },
     specialRules: {
-      holdingPeriodRule: 'Bitcoin held >1 year is explicitly exempt from tax. Shorter trades taxed at income rates. Staking income may have different rules and could reset holding period.',
+      holdingPeriodRule: 'Bitcoin held >1 year is generally exempt from tax for private investors. Each acquisition/disposal has its own one-year clock; staking/mining rewards have separate income and basis treatment.',
     },
     images: [
       { url: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?w=1200', alt: 'Berlin skyline', creditName: 'Adam Vradenburg', creditUrl: 'https://unsplash.com/@adamvradenburg', sourceName: 'Unsplash' },
@@ -779,13 +779,13 @@ Drawbacks: Bitcoin regulations remain somewhat unclear after the partial veto. N
     rank: 12,
     isHonorableMention: true,
     shortBlurb: 'Affordable tropical paradise with new tax-free Bitcoin trading through 2029 and easy long-term visas.',
-    longDescription: `Thailand has long been popular with digital nomads for its affordable living, sunny climate, and welcoming culture – and now it's giving Bitcoin investors reasons to cheer. The Thai government approved a tax exemption (through 2029) on personal income from Bitcoin trading on licensed exchanges. If you trade Bitcoin on a Thai-regulated exchange, any profits are tax-free for the next 5 years (2025–2029).
+    longDescription: `Thailand has long been popular with digital nomads for its affordable living, sunny climate, and welcoming culture – and now it's giving Bitcoin investors reasons to cheer. Ministerial Regulation No. 399 created a personal income tax exemption for capital gains from cryptocurrency or digital token transfers through licensed Thai exchanges, brokers, or dealers from 2025 through 2029.
 
 Thailand also offers a 10-year Long Term Resident (LTR) visa for wealthy individuals, investors, and retirees (criteria include about $1M in assets or $80k/year income) – a program designed to attract high-net-worth expats, including Bitcoin-rich individuals.
 
 Quality of life is a major draw. Places like Bangkok, Chiang Mai, and Phuket offer vibrant lifestyles at a fraction of Western costs. You can rent a luxury condo in Bangkok for what a basic apartment costs in New York or London. Thai food, beaches, and hospitality are world-renowned.
 
-Drawbacks: Profits made on overseas or unlicensed exchanges might not qualify for the exemption, so one would use local exchanges. Thai banks sometimes have inconsistent policies on Bitcoin-related inflows. The government has gone back and forth on regulations in the past.`,
+Drawbacks: Profits made on overseas or unlicensed exchanges might not qualify for the exemption, so one would use local exchanges. Thailand also changed its foreign-income remittance interpretation from 2024, so tax residents remitting post-2023 foreign income into Thailand need planning. Thai banks sometimes have inconsistent policies on Bitcoin-related inflows. The government has gone back and forth on regulations in the past.`,
     tags: {
       climate: 'tropical',
       urbanity: 'major-city',
@@ -814,7 +814,7 @@ Drawbacks: Profits made on overseas or unlicensed exchanges might not qualify fo
       cryptoCommunity: 6,
     },
     notes: {
-      tax: 'Tax exemption through 2029 on Bitcoin trading profits from licensed Thai exchanges. 0% capital gains for qualifying trades. Foreign income generally not taxed if not remitted.',
+      tax: 'Tax exemption through 2029 on crypto gains from licensed Thai exchanges, brokers, or dealers. Overseas/unlicensed exchange gains and foreign income remitted by Thai tax residents need separate advice under the post-2024 remittance rules.',
       visa: '10-year Long Term Resident (LTR) visa for wealthy individuals ($1M+ assets or $80k/year income). Also tourist visas, retirement visas, and Elite visas available.',
       safety: 'Generally safe – violent crime is rare, though petty theft can happen in tourist spots. Political stability has improved.',
       education: 'International schools available in Bangkok and other major cities. Quality varies but good options exist for expat families.',
@@ -824,7 +824,7 @@ Drawbacks: Profits made on overseas or unlicensed exchanges might not qualify fo
       lifestyle: 'World-renowned beaches, cuisine, and hospitality. Vibrant expat communities. Tropical climate year-round.',
     },
     specialRules: {
-      holdingPeriodRule: 'Tax exemption runs through 2029 for profits on licensed Thai exchanges. Must use regulated local exchanges to qualify.',
+      holdingPeriodRule: 'Tax exemption runs through 2029 for transfers through licensed Thai exchanges, brokers, or dealers. Must use regulated local channels to qualify.',
       other: 'LTR visa program targets wealthy individuals and digital nomads. Banks may have varying policies on Bitcoin-related transfers.',
     },
     images: [
@@ -994,7 +994,7 @@ Drawbacks: Relatively small country with limited entertainment compared to major
 
 In 2024, Madeira hosted Bitcoin Atlantis, a major conference attracting 5,000+ participants and 120 speakers – one of the largest Bitcoin events in Europe. The local community has regular meetups, workshops, and merchants accepting BTC via Lightning.
 
-As part of Portugal, Madeira offers 0% tax on Bitcoin gains held over 1 year (28% flat rate for short-term). The Non-Habitual Resident (NHR) scheme provides additional tax benefits. Quality of life is exceptional: very safe (Portugal ranks top 5 in Global Peace Index), excellent healthcare (EU standard), and stunning natural beauty.
+As part of Portugal, Madeira offers 0% tax on Bitcoin gains held over 1 year (28% flat rate for short-term). The broad NHR scheme is no longer generally available to new arrivals, so tax planning now depends on ordinary Portuguese rules or narrower IFICI eligibility. Quality of life is exceptional: very safe, excellent healthcare (EU standard), and stunning natural beauty.
 
 Drawbacks: Cost of living has risen with digital nomad interest. Some imported goods are pricier due to island logistics. Portuguese language helps for full integration outside expat circles.`,
     tags: {
@@ -1025,7 +1025,7 @@ Drawbacks: Cost of living has risen with digital nomad interest. Some imported g
       cryptoCommunity: 9,
     },
     notes: {
-      tax: '0% on Bitcoin held >1 year. Short-term gains taxed at 28% flat rate. NHR program offers 10-year tax benefits on foreign income for new residents.',
+      tax: '0% on Bitcoin held >1 year. Short-term gains are generally taxed at 28% flat rate. The broad NHR program is closed to new entrants; IFICI is narrower and role-dependent.',
       visa: 'D7 passive income visa (~€760/month), D8 digital nomad visa (~€3,480/month). EU citizens have freedom of movement. Citizenship possible after 5 years.',
       safety: 'Very safe – Portugal consistently ranks top 5 in Global Peace Index. Low crime, close-knit island community, strong rule of law.',
       education: 'Multiple international schools (British/IB curricula). International School of Madeira, International Sharing School. Tuition ~$5,700-$12,700/year.',

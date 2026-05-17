@@ -13,7 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { jurisdictions, getTopJurisdictions } from "@/data/jurisdictions";
+import { getTopJurisdictions } from "@/data/jurisdictions";
 
 export default function Home() {
   const topJurisdictions = getTopJurisdictions().slice(0, 6);
@@ -81,10 +81,11 @@ export default function Home() {
                     For Americans
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    Moving abroad doesn&apos;t escape IRS obligations. Your best option is
+                    Moving abroad doesn&apos;t escape IRS obligations. Your strongest option is
                     <strong className="text-blue-700"> Puerto Rico</strong>, where Act 60
-                    allows 0% capital gains while retaining citizenship. Other zero-tax
-                    jurisdictions won&apos;t eliminate your federal tax burden.
+                    can still allow 0% post-residency gains for applications filed by the
+                    end of 2026. Other zero-tax jurisdictions won&apos;t eliminate your
+                    federal tax burden.
                   </p>
                   <Badge variant="info">Puerto Rico strongly favored</Badge>
                 </div>
@@ -101,10 +102,11 @@ export default function Home() {
                     For Non-Americans
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    You&apos;re only taxed by your country of residence, giving you much more
-                    flexibility. Simply relocating to a zero-tax jurisdiction like
+                    You usually have more flexibility than U.S. citizens, but exit taxes,
+                    domicile rules, and source-country rules still matter. Relocating to a
+                    zero-tax jurisdiction like
                     <strong className="text-green-700"> UAE, Singapore, or Cayman</strong>
-                    {" "}can legally eliminate your Bitcoin tax burden.
+                    {" "}can be powerful when your home-country position is clean.
                   </p>
                   <Badge variant="success">More options available</Badge>
                 </div>

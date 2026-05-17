@@ -6,12 +6,12 @@ A modern, responsive web app that helps Bitcoiners find the best jurisdiction (c
 
 - **Interactive Quiz**: 11-step questionnaire covering citizenship, family situation, budget, lifestyle preferences, and deal-breakers
 - **Smart Scoring**: Deterministic algorithm with user-adjustable weight presets (Balanced, Tax Efficiency, Family First, Safety & Stability)
-- **American-Specific Logic**: Puerto Rico strongly favored for U.S. citizens due to Act 60 benefits; other zero-tax jurisdictions appropriately penalized for Americans who can't escape federal taxation
-- **11 Jurisdictions**: UAE (Dubai), Switzerland (Zug), Singapore, El Salvador, Portugal, Cayman Islands, Puerto Rico, plus honorable mentions (Malta, Germany, Hong Kong, Panama)
+- **American-Specific Logic**: Puerto Rico strongly favored for U.S. citizens due to Act 60 benefits, now with the 2026 application-date change reflected; other zero-tax jurisdictions appropriately penalized for Americans who can't escape federal taxation
+- **17 Jurisdictions**: UAE (Dubai), Switzerland (Zug), Singapore, El Salvador, Portugal, Cayman Islands, Puerto Rico, Malta, Germany, Hong Kong, Panama, Thailand, Georgia, Uruguay, Madeira, Boracay, and Bitcoin Jungle Costa Rica
 - **Rich Detail Pages**: Each jurisdiction includes tax info, visa routes, safety notes, crypto community info, and a photo gallery with proper attributions
 - **Results Filtering**: Filter by continent, climate, cost tier, timezone, English-friendliness, and family-friendliness
 - **Responsive Design**: Mobile-first approach with beautiful desktop experience
-- **Persistent State**: Quiz answers saved to localStorage and can be encoded in URL for sharing
+- **Privacy-First State**: Quiz answers stay in volatile browser memory only; they are not stored in localStorage, sessionStorage, cookies, URLs, or a backend
 
 ## Tech Stack
 
@@ -74,7 +74,7 @@ src/
 ├── lib/
 │   ├── utils.ts           # Utility functions
 │   ├── scoring.ts         # Scoring algorithm
-│   └── quiz-store.ts      # Quiz state persistence
+│   └── quiz-store.ts      # Volatile in-memory quiz state and legacy storage cleanup
 └── types/
     └── index.ts           # TypeScript type definitions
 ```
@@ -183,7 +183,7 @@ Users can choose from presets that adjust criterion weights:
 ### American Modifier
 
 For U.S. citizens (and dual citizens):
-- **Puerto Rico**: +25 points (Act 60 allows 0% capital gains while retaining citizenship)
+- **Puerto Rico**: +25 points (Act 60 remains the strongest U.S.-citizen route, but 0% treatment is time-sensitive for applications after 2026)
 - **Other zero-tax jurisdictions**: -5 points (or -3 if strong lifestyle benefits) because U.S. worldwide taxation still applies
 
 ### Deal Breakers
@@ -208,6 +208,10 @@ Tax laws and regulations change frequently and vary based on individual circumst
 - Verify all information independently with official sources
 
 The authors and publishers accept no liability for any decisions made based on this information.
+
+## Data Currency
+
+Last reviewed: May 2026. Recent updates reflected in the data include Puerto Rico Act 38-2026 changes to Act 60, Portugal's repeal of broad NHR for new entrants, Thailand's licensed-channel crypto gains exemption through 2029, El Salvador's 2025 Bitcoin Law reforms, Germany's 2025 crypto-asset tax guidance, and Cayman VASP Phase Two licensing.
 
 ## Image Credits
 

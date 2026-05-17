@@ -22,7 +22,12 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Card } from "@/components/ui/card";
 import type { QuizAnswers, Priority, BitcoinUsage, ClimatePreference, UrbanPreference, TimezoneBand } from "@/types";
-import { defaultQuizAnswers, saveQuizAnswers, loadQuizAnswers, encodeQuizToUrl } from "@/lib/quiz-store";
+import {
+  clearLegacyStoredQuizData,
+  defaultQuizAnswers,
+  loadQuizAnswers,
+  saveQuizAnswers,
+} from "@/lib/quiz-store";
 
 const TOTAL_STEPS = 11;
 
@@ -34,27 +39,13 @@ export function QuizForm({ initialAnswers }: QuizFormProps) {
   const router = useRouter();
   const [step, setStep] = useState(1);
   const [answers, setAnswers] = useState<QuizAnswers>(() => {
-    // Lazy initialization - only runs once on mount
     if (initialAnswers) return initialAnswers;
-    // Note: loadQuizAnswers checks for window, returns defaults if not available
-    if (typeof window !== 'undefined') {
-      return loadQuizAnswers();
-    }
-    return defaultQuizAnswers;
+    return loadQuizAnswers() ?? defaultQuizAnswers;
   });
-  const [isLoaded, setIsLoaded] = useState(false);
 
-  // Mark as loaded after first render (for SSR hydration)
   useEffect(() => {
-    setIsLoaded(true);
+    clearLegacyStoredQuizData();
   }, []);
-
-  // Save answers whenever they change (after initial load)
-  useEffect(() => {
-    if (isLoaded) {
-      saveQuizAnswers(answers);
-    }
-  }, [answers, isLoaded]);
 
   const updateAnswers = (updates: Partial<QuizAnswers>) => {
     setAnswers((prev) => ({ ...prev, ...updates }));
@@ -71,8 +62,7 @@ export function QuizForm({ initialAnswers }: QuizFormProps) {
 
   const handleSubmit = () => {
     saveQuizAnswers(answers);
-    const queryString = encodeQuizToUrl(answers);
-    router.push(`/results?${queryString}`);
+    router.push("/results");
   };
 
   const progress = (step / TOTAL_STEPS) * 100;
@@ -83,14 +73,6 @@ export function QuizForm({ initialAnswers }: QuizFormProps) {
     exit: { opacity: 0, x: -20 },
   };
 
-  if (!isLoaded) {
-    return (
-      <div className="flex items-center justify-center min-h-[400px]">
-        <div className="animate-pulse text-slate-400">Loading...</div>
-      </div>
-    );
-  }
-
   return (
     <div className="max-w-2xl mx-auto">
       {/* Progress Bar */}
@@ -100,6 +82,9 @@ export function QuizForm({ initialAnswers }: QuizFormProps) {
           <span>{Math.round(progress)}% complete</span>
         </div>
         <Progress value={progress} />
+        <p className="mt-3 text-xs text-slate-500">
+          Privacy: answers stay in this browser tab&apos;s memory only. They are not saved to local storage, cookies, URLs, or a server.
+        </p>
       </div>
 
       {/* Form Steps */}
